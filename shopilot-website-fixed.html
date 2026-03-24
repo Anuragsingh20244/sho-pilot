@@ -107,7 +107,7 @@ nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.08);}
 
 /* SECTIONS */
 section{padding:90px 6%;}
-.s-badge{display:inline-block;background:rgba(37,99,235,0.08);color:var(--blue);border:1px solid rgba(37,99,235,0.2);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;font-family:'JetBrains Mono',monospace;letter-spacing:0.5px;margin-bottom:14px;}
+.s-badge{display:inline-block;background:rgba(37,99,235,0.1);color:var(--blue);border:1.5px solid rgba(37,99,235,0.28);border-radius:20px;padding:7px 20px;font-size:14px;font-weight:800;font-family:'Epilogue',sans-serif;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:16px;}
 .s-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:clamp(30px,4vw,50px);letter-spacing:-1.5px;color:var(--text);line-height:1.1;margin-bottom:14px;}
 .s-title span{color:var(--blue);}
 .s-sub{font-size:17px;color:var(--text2);line-height:1.7;max-width:520px;}
@@ -190,7 +190,7 @@ section{padding:90px 6%;}
 
 /* FOOTER */
 footer{background:#0f172a;padding:60px 6% 28px;}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:44px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:44px;}
 .footer-brand-name{font-family:'Clash Display',sans-serif;font-weight:700;font-size:21px;color:#fff;margin-bottom:12px;}
 .footer-brand p{font-size:14px;color:#64748b;line-height:1.7;max-width:230px;}
 .footer-col h4{font-size:12px;font-weight:700;color:#fff;letter-spacing:1.5px;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:16px;}
@@ -512,8 +512,6 @@ section[id],div[id]{scroll-margin-top:80px;}
         <li><span class="ck">✓</span> Multi-branch support</li>
         <li><span class="ck">✓</span> Custom integrations</li>
         <li><span class="ck">✓</span> Dedicated account manager</li>
-        <li><span class="ck">✓</span> SLA uptime guarantee</li>
-        <li><span class="ck">✓</span> White-label option</li>
         <li><span class="ck">✓</span> Priority 24/7 support</li>
       </ul>
       <button class="p-btn p-btn-outline" onclick="openContact(event)">Contact Sales →</button>
@@ -541,11 +539,11 @@ section[id],div[id]{scroll-margin-top:80px;}
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Which payment methods are supported?<span class="faq-icon">+</span></button>
-      <div class="faq-a">We support UPI deeplinks — customers simply tap to pay instantly via GPay, PhonePe, Paytm, or any UPI app on their phone. No third-party payment gateway needed. We also support cash payments, and GST invoices are generated automatically.</div>
+      <div class="faq-a">We support UPI deeplinks — customers simply tap to pay instantly via GPay, PhonePe, Paytm, or any UPI app on their phone. No third-party payment gateway needed. We also support cash payments.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Is my data secure?<span class="faq-icon">+</span></button>
-      <div class="faq-a">Absolutely. We use bank-grade encryption, daily backups, and comply with India's DPDP Act. Your restaurant data is never sold or shared with third parties.</div>
+      <div class="faq-a">Your restaurant data is never sold or shared with third parties.</div>
     </div>
   </div>
 </section>
@@ -585,13 +583,7 @@ section[id],div[id]{scroll-margin-top:80px;}
       <a href="#">Careers</a>
       <a href="#" onclick="openContact(event)">Contact</a>
     </div>
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">DPDP Compliance</a>
-      <a href="#">Security</a>
-    </div>
+
   </div>
   <div class="footer-bottom">
     <div>© 2026 ShoPilot Technologies Pvt. Ltd. · Made with ❤️ in India &nbsp;·&nbsp; <a href="mailto:weareshopilot@gmail.com" style="color:#60a5fa;text-decoration:none;font-weight:600;">weareshopilot@gmail.com</a></div>
@@ -599,7 +591,7 @@ section[id],div[id]{scroll-margin-top:80px;}
       <a href="#">Twitter</a>
       <a href="#">Instagram</a>
       <a href="#">LinkedIn</a>
-      <a href="mailto:weareshopilot@gmail.com">weareshopilot@gmail.com</a>
+      <a href="mailto:weareshopilot@gmail.com" style="color:#475569;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#475569'">weareshopilot@gmail.com</a>
     </div>
   </div>
 </footer>
@@ -607,7 +599,7 @@ section[id],div[id]{scroll-margin-top:80px;}
 <!-- TOAST -->
 <div id="toast" style="position:fixed;bottom:28px;right:28px;background:#1e2a3a;color:#fff;border-radius:10px;padding:13px 20px;font-size:14px;font-weight:600;transform:translateY(80px);opacity:0;transition:all 0.35s cubic-bezier(0.34,1.56,0.64,1);z-index:9999;box-shadow:0 8px 32px rgba(0,0,0,0.3);pointer-events:none;"></div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 
 function openAbout(e) {
   if (e) e.preventDefault();
@@ -757,20 +749,29 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeAbout
       <span>🛒 ShoPilot</span>
     </div>
     <h3>Get in touch with us</h3>
-    <p>We'd love to get your restaurant on ShoPilot. Reach out via any channel below!</p>
+    <p>We'd love to get your restaurant on ShoPilot. Click below — your email app will open with our address already filled in!</p>
 
-    <div class="contact-item" onclick="copyEmail()">
+    <a class="contact-item" href="mailto:weareshopilot@gmail.com?subject=Getting%20Started%20with%20ShoPilot&body=Hi%20ShoPilot%20Team%2C%0A%0AI%20am%20interested%20in%20getting%20started%20with%20ShoPilot%20for%20my%20restaurant.%0A%0ARestaurant%20Name%3A%20%0ACity%3A%20%0ANumber%20of%20Tables%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you!" target="_blank" rel="noopener">
       <div class="contact-item-icon" style="background:#fef3c7;">📧</div>
       <div class="contact-item-text">
-        <div class="contact-item-label">Email us</div>
-        <div class="contact-item-value" id="emailVal"><a href="mailto:weareshopilot@gmail.com">weareshopilot@gmail.com</a></div>
+        <div class="contact-item-label">Email us — opens your mail app</div>
+        <div class="contact-item-value">weareshopilot@gmail.com</div>
       </div>
-      <span class="contact-item-arrow" id="emailArrow">📋 Copy</span>
+      <span class="contact-item-arrow">→ Open</span>
+    </a>
+
+    <div class="contact-item" onclick="copyEmail()" style="margin-top:10px;">
+      <div class="contact-item-icon" style="background:#ede9fe;">📋</div>
+      <div class="contact-item-text">
+        <div class="contact-item-label">Or copy the email address</div>
+        <div class="contact-item-value" id="emailVal">weareshopilot@gmail.com</div>
+      </div>
+      <span class="contact-item-arrow" id="emailArrow">Copy</span>
     </div>
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function copyEmail() {
   const email = 'weareshopilot@gmail.com';
   navigator.clipboard.writeText(email).then(() => {
@@ -861,7 +862,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
 
       <div class="about-section">
         <div class="about-section-title"><span>🎯</span> Our Mission</div>
-        <p>To make every restaurant in India — from a small dhaba in Agra to a multi-table café in Delhi — run as efficiently as the best in the world. We believe technology should be simple, fast, and actually useful. That's what we build.</p>
+        <p>To make every restaurant in India — whether a small roadside dhaba or a bustling multi-table café — run as efficiently as the best in the world. We believe technology should be simple, fast, and actually useful. That's what we build.</p>
       </div>
 
       <div class="about-divider"></div>
@@ -888,16 +889,33 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
             <div class="founder-name">Nitin Singh Rawat</div>
             <div class="founder-bio">Currently pursuing BCA, Nitin is the user&#39;s best friend on the team. He looks at every screen, every button, and every flow through the eyes of the people who&#39;ll actually use it. His instinct for simplicity and his creative eye made ShoPilot not just powerful, but a pleasure to use &mdash; because great software should feel effortless.</div>
           </div>
-          <div class="founder-card" style="grid-column:1/-1;max-width:360px;margin:0 auto;">
-            <div class="founder-av" style="background:linear-gradient(135deg,#059669,#047857);">AR</div>
+                    <div class="founder-card" style="grid-column:1/-1;max-width:360px;margin:0 auto;">
+            <div class="founder-av" style="background:linear-gradient(135deg,#0ea5e9,#0284c7);">AR</div>
             <div class="founder-role">Co-Founder</div>
             <div class="founder-name">Atul Rawat</div>
-            <div class="founder-bio">Currently pursuing BCA, Atul is the engine under ShoPilot&#39;s hood. While others planned, he built &mdash; writing the lines of code that keep ShoPilot fast, stable, and always-on. His relentless work as a core developer means restaurants never face a crash at rush hour. Optimized, reliable, and rock solid &mdash; that&#39;s Atul&#39;s signature.</div>
+            <div class="founder-bio">Atul brings the ground-level hustle that turns ideas into reality. He understands what restaurant owners need before they even say it &mdash; and makes sure ShoPilot speaks their language. His sharp instincts and relentless drive ensure that every decision we make is rooted in real problems and real people.</div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
+</div>
+
+<script>
+function openAbout(e) {
+  if (e) e.preventDefault();
+  document.getElementById('aboutOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeAbout() {
+  document.getElementById('aboutOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeAboutOutside(e) {
+  if (e.target === document.getElementById('aboutOverlay')) closeAbout();
+}
+</script>
 
 </body>
 </html>
